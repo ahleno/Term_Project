@@ -1,2 +1,6 @@
 # Term_Project
-Web Programming - Term project
+
+웹프로그래밍 과목 텀프로젝트 수행 레포지토리
+
+~5/26
+피자 목록 및 리뷰보기 페이지에 대한 HTML / CSS 작성 수행

@@ -1,0 +1,207 @@
+@import url('./datepicker.css');
+
+.only_m {display:none;}
+/* table */
+
+.table {
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+.table caption {
+    font-size: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* tab */
+
+.tab_cont {
+    display: none;
+}
+
+.f_left {
+    float: left;
+}
+
+.f_right {
+    float: right;
+}
+
+.t_left {
+    text-align: left !important;
+}
+
+.t_right {
+    text-align: right !important;
+}
+
+.t_red {
+    color: #f9423a;
+}
+
+.pointer_cursor {
+    cursor: pointer;
+}
+
+.pointer_cursor:hover {
+    text-decoration: underline;
+}
+
+
+/* pop up */
+
+.pop_wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+
+.pop_wrap:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: .6;
+    position: fixed;
+}
+
+.pop_wrap .pop_cont {
+    width: 400px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+.pop_wrap .pop_cont h2 {
+    color: #fff;
+    background: #41b6e6;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.pop_wrap .pop_cont p {
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px;
+}
+
+.pop_wrap .pop_cont p span {
+    display: block;
+}
+
+.pop_wrap .btn_wrap {
+    box-sizing: border-box;
+    padding: 0 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.pop_wrap .btn_wrap.btn_1 span {
+    width: 100%;
+    float: none;
+    margin: auto;
+    max-width: 200px;
+    display: block;
+}
+
+.pop_wrap .btn_wrap span {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 10px;
+    position: relative;
+    float: left;
+}
+
+.pop_wrap .btn_wrap:After {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.pop_wrap .btn_wrap span button {
+    color: #b1b1b1;
+    background: #fff;
+    border: 1px #b1b1b1 solid;
+    font-size: 20px;
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.pop_wrap .btn_wrap span .btn_blue {
+    background: #41b6e6;
+    color: #fff;
+    border: 0;
+}
+
+
+/* layout */
+
+.inner {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.f_left .alvolo-select-custom {
+    border: 1px #ddd solid;
+    float: left;
+    min-width: 150px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.div-input-search .alvolo-select-custom {
+    margin-right: 10px;
+}
+
+.alvolo-select-custom {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #666666;
+    width: 100%;
+    /*ëª¨ë°”ì¼ 100/2 = 50 */
+    font-family: 'Noto Sans CJK KR Light', serif;
+    font-size: 20px;
+    padding: 0 10px !important;
+    color: #222;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #dddddd;
+    background: transparent url('../../assets/img/arrow_down.svg') no-repeat center right;
+    background-size: 11px 7px;
+    background-position-x: calc(100% - 15px);
+}
+
+.alvolo-select-custom:focus {
+    cursor: pointer;
+    outline: none;
+}
+
+.alvolo-select-custom select {
+    width: 0px;
+}
+
+select::-ms-expand {
+    display: none;
+}

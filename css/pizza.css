@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: inherit;
+}
+
+div {
+    display: block;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+/******* 
+header
+*******/
+.tab-header {
+    width: 100%;
+    height: 70px;
+    display: table;
+}
+
+.tab-top{
+    display: flex;
+}
+
+.tab-collapse {
+    display: none;
+}
+
+.icon {
+    display: flex;
+}
+
+/******* 
+main
+*******/
+.main-page {
+    width: 1200px;
+    background-color: #f4f4f4;
+    padding-top: 30px;
+    margin: auto;
+}
+
+.main-top {
+    width: 1200px;
+    height: 204px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    margin: auto;
+    padding-top: 60px;
+}
+
+.main-tab-area {
+    width: 1200px;
+    padding-top: 30px;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tab-title {
+    border: 1px solid rgb(204, 204, 204);
+    text-align: center;
+}
+
+.tab-title.active {
+    background-color: #41bee6;
+    color: #ffffff;
+}
+
+.tab-title.default {
+    background-color: #ffffff;
+    color: #ccc;
+}
+
+.menu-text-area {
+    width: 1200px;
+    height: 68px;
+    position: relative;
+    text-align: right;
+}
+
+.menu-rank {
+    border: 1.5px;
+    height: 70px;
+    width: 280px;;
+}
+
+.rank-select {
+    padding: 0 30px;
+    border: 0;
+    width: 100%;
+    height: 68px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 20px;
+    color: #222;
+}
+/******* 
+go-top btn
+*******/
+.client-main-go-top {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}

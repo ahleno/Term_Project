@@ -26,33 +26,31 @@
     <script language="JavaScript" src="/static/assets/js/custom_funcs.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/common.css">
     <link rel="stylesheet" type="text/css" href="./css/contents.css">
+    <link rel="stylesheet" type="text/css" href="./css/couponCard.css">
     <script language="JavaScript" src="/static/assets/js/jquery-ui.min.js"></script>
     <script language="JavaScript" src="/static/assets/js/custom_ui.js"></script>
     <script type="text/javascript" src="https://auth.mobilians.co.kr/js/ext/ext_inc_comm.js"></script>
     <script type="text/javascript" src="https://stdpay.inicis.com/stdjs/INIStdPay.js" charset="UTF-8"></script>
     <script src="https://nsp.pay.naver.com/sdk/js/naverpay.min.js"></script>
     <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
-    <script type="text/javascript">
-    if (!wcs_add) var wcs_add = {};
-    wcs_add["wa"] = "f91bfffad10c38";
-    if (window.wcs) {
-        wcs_do();
-    }
-    </script>
-    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
-    <script type="text/javascript">
-        if (!wcs_add) var wcs_add = {};
-        wcs_add["wa"] = "12e04513ff548a0";
+    <script type="text/javascript">if (!wcs_add) var wcs_add = {};
+        wcs_add["wa"] = "f91bfffad10c38";
         if (window.wcs) {
             wcs_do();
         }
     </script>
-    <script type="text/javascript">
-        function appRootCall() {
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">if (!wcs_add) var wcs_add = {};
+        wcs_add["wa"] = "12e04513ff548a0";
+        if (window.wcs) {
+            wcs_do();
+        }</script><script type="text/javascript">function appRootCall() {
             popOpen('popAppNotice');
         }
+
         function appRootCall2() {
             popClose('popAppNotice');
+
             if (typeof window.PushSet !== 'undefined') {
                 var pushYn = window.PushSet.getPushYN();
                 getPushInfo(pushYn);
@@ -66,1011 +64,545 @@
     <link href="https://www.google-analytics.com" rel="preconnect">
     <script async="" src="https://www.google-analytics.com/analytics.js" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8" async="" src="/static/js/0.ff7b372e3e90a1416a79.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" src="/static/js/2.3e2ad8b8b9137a9cbfd5.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" src="/static/js/5.7bd34d5ba6a1faf6fc96.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" src="/static/js/2.5f6f4e2833c28b488ae6.js"></script>
     <style type="text/css">
-    .circle[_v-31e92f67] 
-    {
-        position:relative;
-        display:inline-block
-    }
-    
-    .circle-percent-text-body[_v-31e92f67]
-    {
-        position:absolute;
-        width:100%;
-        height:100%;
-        display:-webkit-box;
-        display:-ms-flexbox;
-        display:flex;
-        -webkit-box-orient:vertical;
-        -webkit-box-direction:normal;
-        -ms-flex-direction:column;
-        flex-direction:column;
-        -webkit-box-align:center;
-        -ms-flex-align:center;
-        align-items:center;
-        -webkit-box-pack:center;
-        -ms-flex-pack:center;
-        justify-content:center
-    }
-    
-    .percent-text[_v-31e92f67]{font-weight:700}
+        .circle[_v-31e92f67] 
+        {
+            position:relative;
+            display:inline-block
+        }
+        .circle-percent-text-body[_v-31e92f67]
+        {
+            position:absolute;
+            width:100%;
+            height:100%;
+            display:-webkit-box;
+            display:-ms-flexbox;
+            display:flex;
+            -webkit-box-orient:vertical;
+            -webkit-box-direction:normal;
+            -ms-flex-direction:column;
+            flex-direction:column;
+            -webkit-box-align:center;
+            -ms-flex-align:center;
+            align-items:center;
+            -webkit-box-pack:center;
+            -ms-flex-pack:center;
+            justify-content:center
+        }
+        .percent-text[_v-31e92f67]{font-weight:700}
     </style>
 </head>
 <body style="overflow: auto;">
-            <div id="app" style="overflow: auto;">
-                <div>
-                    <div class="web-main-tab-header-layout">
-                        <div class="web-main-tab-header">
-                            <div class="web-main-tab-top">
-                                <div class="tab-top-left">
-                                    <img 
-                                    src=""> 
-                                    <img 
-                                    src="" 
-                                    class="web-icon-logo">
-                                </div> 
-                                <div class="tab-top-middle">
-                                    <span class="top-middle-text">피자</span>
-                                    <span class="top-middle-text">스페셜반반피자</span>
-                                    <span class="top-middle-text">세트</span>
-                                    <span class="top-middle-text">사이드</span>
-                                    <span class="top-middle-text">하프앤하프</span>
-                                    <span class="top-middle-text">멤버십˙제휴할인</span>
-                                    <span class="top-middle-text">이벤트</span>
-                                </div> 
-                                <div class="tab-top-right">
-                                    <div class="tab-text-img-layout">
-                                        <div class="top-right-text-layout">
-                                            <span class="top-right-text">마이페이지</span> 
-                                            <!----> 
-                                            <!----> 
-                                            <span class="top-right-text">로그아웃</span>
-                                        </div> 
-                                        <!----> 
-                                        <img src="">
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="layout-tab-slide">
-                                    <img src=""> 
-                                    <div class="tab-slide-line">
-                                    </div>
-                            </div> 
-                            <div class="web-main-tab-collapse">
-                                <div class="web-collapse-tab-top">
-                                    <div class="collapse-tab-item">
-                                        <div class="tab-item">
-                                            피자
-                                        </div> 
-                                        <div class="tab-item">
-                                            전체피자 
-                                        </div>
-                                        <div class="tab-item">
-                                            스페셜반반피자
-                                        </div>
-                                        <div class="tab-item">
-                                            세트메뉴
-                                        </div>
-                                        <div class="tab-item">
-                                            하프앤하프
-                                        </div>
-                                    </div>
-                                    <div class="collapse-tab-item">
-                                        <div class="tab-item">
-                                            사이드메뉴
-                                        </div> 
-                                    </div>
-                                    <div class="collapse-tab-item">
-                                        <div class="tab-item">
-                                            멤버십˙제휴할인
-                                        </div> 
-                                        <div class="tab-item">
-                                            멤버십 혜택
-                                        </div>
-                                        <div class="tab-item">
-                                            통신사 제휴 할인
-                                        </div>
-                                    </div>
-                                    <div class="collapse-tab-item">
-                                        <div class="tab-item">
-                                            이벤트
-                                        </div>
-                                    </div>
-                                    <div class="collapse-tab-item">
-                                        <div class="tab-item">
-                                            매장찾기
-                                        </div> 
-                                        <div class="tab-item">
-                                            지역명 찾기
-                                        </div>
-                                        <div class="tab-item">
-                                            매장명 찾기
-                                        </div>
-                                        <div class="tab-item">
-                                              현위치 찾기
-                                        </div>
-                                    </div>
-                                    <div class="collapse-tab-item">
-                                        <div class="tab-item">
-                                            마이페이지
-                                        </div> 
-                                        <div class="tab-item">
-                                            주문내역
-                                        </div>
-                                        <div class="tab-item">
-                                            쿠폰함
-                                        </div>
-                                        <div class="tab-item">
-                                            MY CLASS
-                                        </div>
-                                        <div class="tab-item">
-                                            비행기스탬프
-                                        </div>
-                                        <div class="tab-item">
-                                            정보수정
-                                        </div>
-                                        <div class="tab-item">
-                                            회원탈퇴
-                                        </div>
-                                    </div>
-                                    <div class="collapse-tab-item">
-                                        <div class="tab-item">
-                                            주문하기
-                                        </div> 
-                                        <div class="tab-item">
-                                            배달주문하기
-                                        </div>
-                                        <div class="tab-item">
-                                            포장주문하기
-                                        </div>
-                                        <div class="tab-item">
-                                            간편주문
-                                        </div>
-                                        <div class="tab-item">
-                                            E쿠폰
-                                        </div>
-                                        <div class="tab-item">
-                                            선물하기
-                                        </div>
-                                    </div>
-                                </div> 
-                                <div class="web-collapse-tab-middle">
-                                    <span class="tab-middle-item">
-                                        회사소개
-                                        <img src="">
-                                    </span> 
-                                    <span class="tab-middle-item">
-                                    가맹문의
-                                        <img src="">
-                                    </span> 
-                                    <span class="tab-middle-item">
-                                        고객센터
-                                        <img src="">
-                                    </span> 
-                                    <span class="tab-middle-item">
-                                        단체주문
-                                        <img src="">
-                                    </span> 
-                                    <img src="">
-                                </div>
-                            </div>
+    <div id="app">
+        <div>
+            <div class="web-main-tab-header-layout">
+                <div class="web-main-tab-header">
+                    <div class="web-main-tab-top">
+                        <div class="tab-top-left">
+                            <img src="">
+                            피자
                         </div> 
-                        <!---->
-                    </div> 
-                    <div data-v-42d86f9b="" class="client-main-page">
-                        <div data-v-42d86f9b="" class="header-whole-fix">
-                            <div data-v-225a4dcb="" data-v-42d86f9b="" class="layout-header-whole fix-header" imgpath="/static/img/logo_alvolo.dc8dc00.png">
-                                <div data-v-225a4dcb="" class="header-left-area">
-                                    <img data-v-225a4dcb="" src="">
-                                </div> 
-                                <div data-v-225a4dcb="" class="header-center-area">
-                                    <div data-v-0902dc33="" data-v-42d86f9b="" class="layout-tab-wholeheader-text-location" data-v-225a4dcb="">    
-                                        <div data-v-0902dc33="" class="layout-tab-title">
-                                            <div data-v-0902dc33="" class="layout-location-area">
-                                                <img data-v-0902dc33="" src="">
-                                            </div> 
-                                            <span data-v-0902dc33="" class="location-text">
-                                                    경상남도 김해시 외동 883 일동한신아파트 124동 1403호
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div> 
-                                <div data-v-225a4dcb="" class="header-right-area">
-                                    <!----> 
-                                    <img data-v-225a4dcb="" src="">
-                                </div>
-                            </div> 
-                            <div data-v-5a6260f0="" data-v-42d86f9b="" class="layout-tab-whole fix-tab">
-                                <div data-v-5a6260f0="" class="layout-tab-title">
-                                    <span data-v-5a6260f0="" class="title-text leftMargin">
-                                        홈
-                                    </span>
-                                    <span data-v-5a6260f0="" class="title-text">
-                                        피자
-                                    </span>
-                                    <span data-v-5a6260f0="" class="title-text letterSpacing">
-                                        스페셜반반피자
-                                    </span>
-                                    <span data-v-5a6260f0="" class="title-text">
-                                        세트
-                                    </span>
-                                    <span data-v-5a6260f0="" class="title-text">
-                                        사이드
-                                    </span>
-                                    <span data-v-5a6260f0="" class="title-text rightMargin">
-                                        하프앤하프
-                                    </span>
-                                </div> 
-                                <div data-v-5a6260f0="" class="layout-tab-slide">
-                                    <img data-v-5a6260f0="" src=""> 
-                                    <!---->
-                                </div>
-                            </div>
+                        <div class="tab-item">
+                            전체피자
+                        </div>
+                        <div class="tab-item">
+                          스페셜반반피자
+                        </div>
+                        <div class="tab-item">
+                          세트메뉴
+                        </div>
+                        <div class="tab-item">
+                          하프앤하프
+                        </div>
+                    </div>
+                    <div class="collapse-tab-item">
+                        <div class="tab-item">
+                            사이드메뉴
                         </div> 
-                        <div data-v-42d86f9b="" class="md-drawer       side-drawer-whole md-theme-default md-left md-temporary">
-                            <div data-v-42d86f9b=""          class="drawer">
-                                <div data-v-972a2f4c="" data-v-42d86f9b="" class="layout-drawerlogin-whole">
-                                    <div data-v-972a2f4c="">
-                                        <div data-v-972a2f4c="" class="layout-header-title-login">
-                                            <span data-v-972a2f4c="" class="header-text-name">
-                                                김한얼
-                                            </span> 
-                                            <span data-v-972a2f4c="" class="header-text">
-                                                고객님
-                                            </span>
-                                        </div> 
-                                        <div data-v-972a2f4c="" class="layout-body-content">
-                                            <div data-v-972a2f4c=""         class="body-left">
-                                                <span data-v-972a2f4c="" class="drawer-btn-join">
-                                                    로그아웃
-                                                </span>
-                                            </div> 
-                                                <div data-v-972a2f4c="" class="body-right">
-                                                    <span data-v-972a2f4c="" class="btn-search-order">
-                                                        마이페이지
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> 
-                                    <div data-v-42d86f9b="" class="layout-drawer-menu">
-                                        <div data-v-147cdbb4="" data-v-42d86f9b="" class="side-collapse-container">
-                                            <div data-v-147cdbb4="" class="side-collapse-switch">
-                                                <div data-v-147cdbb4="" class="side-collapse-title">
-                                                    피자
-                                                </div> 
-                                                <div data-v-147cdbb4="">
-                                                    <img data-v-147cdbb4="" src="">
-                                                </div>
-                                            </div> 
-                                            <div data-v-147cdbb4="" class="collapse-container" style="max-height: 600px;">
-                                                <div data-v-42d86f9b=""  data-v-147cdbb4="">
-                                                    <div data-v-42d86f9b="" data-v-147cdbb4="" 
-                                                    style="padding-top: 10px; padding-bottom: 10px;">
-                                                        <div data-v-42d86f9b="" data-v-147cdbb4="">
-                                                            전체보기
-                                                        </div> 
-                                                        <div data-v-42d86f9b="" data-v-147cdbb4="">
-                                                            스페셜반반피자
-                                                        </div>                            
-                                                        <div data-v-42d86f9b="" data-v-147cdbb4="">세트메뉴</div> 
-                                                        <div data-v-42d86f9b="" data-v-147cdbb4="">하프앤하프</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> 
-                                            <div data-v-147cdbb4="" data-v-42d86f9b="" class="side-collapse-container">
-                                                <div data-v-147cdbb4="" class="side-collapse-switch">
-                                                    <div data-v-147cdbb4="" class="side-collapse-title">
-                                                    사이드메뉴
-                                                    </div> 
-                                                    <div data-v-147cdbb4="">
-                                                        <img data-v-147cdbb4="" src="">
-                                                        멤버십˙제휴할인
-                                                    </div> 
-                                                    <div data-v-147cdbb4="">
-                                                        <img data-v-147cdbb4="" src="">
-                                                        이벤트
-                                                    </div> 
-                                                    <div data-v-147cdbb4="">
-                                                        <img data-v-147cdbb4="" src="">
-                                                    </div>
-                                                </div> 
-                                                <div data-v-147cdbb4="" class="collapse-container"> 
-                                                </div>
-                                        </div> 
-                                        <div data-v-42d86f9b="" class="icon-button-class-outbox">
-                                            <div data-v-c075e3ae="" data-v-42d86f9b="" class="layout-iconbtn-whole icon-button-class">
-                                                <div data-v-c075e3ae="" class="layout-left-side">
-                                                    <img data-v-c075e3ae="" src="">
-                                                    </div> 
-                                                <div data-v-c075e3ae="" class="layout-right-side">
-                                                    <span data-v-c075e3ae="" class="text">
-                                                        매장찾기
-                                                    </span>
-                                                </div>
-                                            </div> 
-                                            <div data-v-c075e3ae="" data-v-42d86f9b="" class="layout-iconbtn-whole icon-button-class">
-                                                <div data-v-c075e3ae="" class="layout-left-side">
-                                                    <img data-v-c075e3ae="" src="">
-                                                </div> 
-                                                <div data-v-c075e3ae="" class="layout-right-side">
-                                                    <span data-v-c075e3ae="" class="text">
-                                                        간편주문
-                                                    </span>
-                                                </div>
-                                            </div> 
-                                            <div data-v-c075e3ae="" data-v-42d86f9b="" class="layout-iconbtn-whole icon-button-class">
-                                                <div data-v-c075e3ae="" class="layout-left-side">
-                                                    <img data-v-c075e3ae="" src="">
-                                                </div> 
-                                                <div data-v-c075e3ae="" class="layout-right-side">
-                                                    <span data-v-c075e3ae="" class="text">
-                                                        고객센터
-                                                    </span>
-                                                </div>
-                                            </div> 
-                                            <div data-v-c075e3ae="" data-v-42d86f9b="" class="layout-iconbtn-whole icon-button-class">
-                                                <div data-v-c075e3ae="" class="layout-left-side">
-                                                    <img data-v-c075e3ae="" src="">
-                                                </div> 
-                                                <div data-v-c075e3ae="" class="layout-right-side">
-                                                    <span data-v-c075e3ae="" class="text">
-                                                        단체주문
-                                                    </span>
-                                                </div>
-                                            </div> 
-                                            <!---->
-                                        </div> 
-                                        <div data-v-42d86f9b="" class="bottom-alvolo-info">
-                                            <span data-v-42d86f9b="" class="alvolo-info-text">
-                                                온라인 주문 취소 및 문의: 070-4787-1991
-                                            </span> 
-                                            <span data-v-42d86f9b="" class="alvolo-info-text">
-                                                (운영시간: 11:00 ~ 23:00)
-                                            </span> 
-                                            <span data-v-42d86f9b="" class="alvolo-info-text">
-                                                본사: 02-2645-8495
-                                            </span> 
-                                            <span data-v-42d86f9b="" class="alvolo-info-text">
-                                                (운영시간: 평일 09:00 ~ 17:00)
-                                            </span>
-                                        </div> 
-                                        <img data-v-42d86f9b="" src="/static/img/CCM_m.a4f3ef2.png" alt="CCM 소비자 중심 공정거래위원회" class="m_ccmImg">
-                                    </div>
-                                </div> 
-                            </div> 
-                            <div data-v-42d86f9b="" style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba                             (0, 0, 0, 0);"><div data-v-42d86f9b="" class="md-content-body">
-                                <div data-v-42d86f9b="" class="layout-content-scroll">
-                                    <!---->                             
-                                    <div data-v-42d86f9b="">
-                                        <div data-v-42d86f9b="" class="main-pizza-menu">
-                                            <!----> 
-                                            <div class="pizza-menu">
-                                                <div class="pizza-menu-content">
-                                                    <div class="pizzamenu-select-area">
-                                                        <div class="pizzamenu-category">
-                                                            <select class="alvolo-select-noline" style="height: 50px;">
-                                                                <!----> 
-                                                                <option value="0">전체</option>
-                                                                <option value="1">장인피자</option>
-                                                                <option value="2">달인피자</option>
-                                                                <option value="3">명품피자</option>
-                                                                <option value="4">웰빙피자<option>
-                                                                <option value="5">정통피자</option>
-                                                                <option value="6">퍼스널피자</option>
-                                                            </select>
-                                                        </div> 
-                                                        <div class="pizzamenu-rank">
-                                                            <select id="selectActive" class="alvolo-select-noline" style="height: 50px;">
-                                                                <option value="3">인기순</option>
-                                                                <option                          value="2">신제품순</option>
-                                                                <option value="1">가격낮은순</option>
-                                                                <option value="0">가격높은순</option>
-                                                            </select>
-                                                        </div>
-                                                    </div> 
-                                                    <div class="pizzamenu-card-area">
-                                                        <div class="pizzamenu-card">
-                                                            <div data-v-6bd3290f="">
-                                                                <div data-v-6bd3290f="" style="transition-duration: 0s; z-index: 1; transform: translateX(0px); transition-timing-function: linear; position: relative;                             background: rgb(255, 255, 255); overflow: visible; touch-action: pan-y; user-select: none; -webkit-user-drag: none;                       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                                                    <div data-v-6bd3290f="" class="pizza-state-container-dual">
-                                                                        <img data-v-6bd3290f="" src="" class="pizza-state-new"> 
-                                                                        <img data-v-6bd3290f="" src="">
-                                                                    </div> 
-                                                                    <!----> 
-                                                                    <!----> 
-                                                                    <div data-v-6bd3290f="" class="image-container">
-                                                                        <img data-v-6bd3290f="" src="https://img.pizzaalvolo.co.kr/uploads/tmp976C.png" class="image">
-                                                                    </div> 
-                                                                    <div data-v-6bd3290f="" class="item">
-                                                                        <h5 data-v-6bd3290f="" class="item-name">
-                                                                            피자에`진´심피자&amp;스페셜카드
-                                                                        </h5> 
-                                                                        <h6 data-v-6bd3290f="" class="item-description">
-                                                                            트러플 소스와 버섯, 불고기의 만남!
-                                                                        </h6> 
-                                                                        <h5 data-v-6bd3290f="" class="item-price">
-                                                                        <span data-v-6bd3290f="">
-                                                                        <span data-v-6bd3290f="" class="large">L</span>
-                                                                            37,000
-                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                            32,500
-                                                                        </span>
-                                                                        </h5> 
-                                                                        <div data-v-6bd3290f="" class="topping-box">
-                                                                            <div data-v-6bd3290f="" class="topping-box-container"><div class="box">소고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;">
-                                                                                <div class="detail">
-                                                                                    <img src="">
-                                                                                    <img src=""> 
-                                                                                    <img data-v-6bd3290f="" src="">
-                                                                                </div> 
-                                                                                <div data-v-6bd3290f="" class="item">
-                                                                                    <h5 data-v-6bd3290f="" class="item-name">
-                                                                                    피자에`진´심피자&amp;굿즈
-                                                                                    </h5> 
-                                                                                    <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        트러플 소스와 버섯, 불고기의 만남!
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        37,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        32,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">소고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail">
-                                                                                          <img src=""> 
-                                                                                              <img data-v-6bd3290f="" src="">
-                                                                                        매운맛좀`바바라´피자&amp;스페셜카드
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        메이저킹 소시지, 스파이시 치킨까지!
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        37,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        32,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">감자</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail">
-                                                                                          <img src=""> 
-                                                                                              <img data-v-6bd3290f="" src="">
-                                                                                          </div> <!----> <!----> <div data-v-6bd3290f="" class="image-container"><img data-v-6bd3290f="" src="https://img.pizzaalvolo.co.kr/uploads/tmpC7F.png" class="image"></div> <div data-v-6bd3290f="" class="item"><h5 data-v-6bd3290f="" class="item-name">
-                                                                                        매운맛좀`바바라´피자&amp;굿즈
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        메이저킹 소시지, 스파이시 치킨까지!
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        37,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        32,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">감자</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        쉬림프&amp;핫치킨골드피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #알볼로직원선호도1위 #매콤함
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        34,500
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        29,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">새우</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        어깨피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #9가지맛 #인기메뉴 #한판에
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        31,500
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        27,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">단호박</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">새우</div></div></div></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        꿈을피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #델루나피자 #불고기&amp;바질 #고구마
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        31,500
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        27,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">과일</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">고구마</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">소고기</div></div></div></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        단호박피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #담백달콤 #부드러움 #영양만점
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        27,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        22,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">단호박</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        콤비네이션피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #남녀노소 #누구나좋아하는맛
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        24,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        20,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        팔도피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                         #전주불백피자 #목동피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                      31,500
-                                                                                    </h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">새우</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        웃음꽃피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #스마일 #다양한토핑#살짝매콤
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        29,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        24,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        옥수수피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #통옥수수 #고구마 #파인애플
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        27,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        22,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">통옥수수</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">고구마</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        목동피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #기본에충실하다 #임실치즈듬뿍
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        27,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        22,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        쏘핫피자 1단계
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #매운맛 #1단계 #수미감자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        31,500
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        27,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">감자</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        날개피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #수제마늘빵 #부르스케타
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        34,500
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        29,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">수제마늘빵</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">새우</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">통옥수수</div></div></div></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        쏘핫피자 2단계
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #매운맛 #2단계 #수미감자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        31,500
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        27,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">감자</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        쏘핫피자 3단계
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #매운맛 #3단계 #수미감자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        31,500
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        27,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">감자</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        전주불백피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #불맛가득 #간장불백 #고추장불백
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        29,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        24,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        대새피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #대새레드소스#72시간숙성#랍스터새우
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        31,500
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        27,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">새우</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        고구마피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #담백함 #부드러움 #영양만점
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        27,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        22,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">고구마</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        팔자피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #여덟가지토핑 #R는여섯가지 #골라먹는맛
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        29,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        24,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">새우</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">통옥수수</div></div></div></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        핫&amp;스파이시치킨피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #매콤함새콤의_조화
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        27,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        22,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        고르곤졸라
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #블루치즈 #깊은향 #꿀과함께
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        27,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        22,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        포테이토피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #큼직한감자 #담백함 #고소함
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        24,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        20,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">감자</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        베이컨체다치즈피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                         #베이컨 #한판가득 #꽉채운맛
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        24,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        20,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        불고기피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #육즙가득 #직접볶은 #불고기듬뿍
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        24,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        20,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">소고기</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        야채피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #신선야채 #영양만점 
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        23,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        19,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        하와이안피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #파인애플 #새콤달콤
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        23,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        19,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">과일</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        페페로니피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #페페로니#한판가득 #풍부한맛
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        23,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        19,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        치즈피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #정통치즈 #치즈듬뿍
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">L</span>
-                                                                                        23,000
-                                                                                    
-                                                                                        <span data-v-6bd3290f="" class="regular">R</span>
-                                                                                        19,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 쉬림프&amp;핫치킨
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #넘사벽1위 #매콤함 #1인피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          20,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">새우</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 대새피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #72시간숙성 #랍스터새우 #1인피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          19,500
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">새우</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 웃음꽃피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #맛없맛 #살짝매콤 #1인피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          17,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 고구마피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #부드러운 #어른입맛 #1인피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          15,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">고구마</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 단호박피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #달콤단백 #시그니처 #1인피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          15,000
-                                                                                      </span></h5> <!----><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 핫&amp;스파이시치킨
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #매콤새콤 #치킨할라피뇨 #1인피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          15,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 고르곤졸라
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #블루치즈 #깊은향 #1인피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          15,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 목동피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #기본에충실한 #임실치즈 #1인피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          15,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 옥수수피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #통옥수수 #고구마 #파인애플 #1인피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          15,000
-                                                                                      </span></h5> <!----><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 포테이토피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #담백한 #고소한 #1인피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          14,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">감자</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 콤비네이션피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #남녀노소 #누구나좋아하는 #1인피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          14,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 베이컨체다치즈
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #베이컨 #치즈듬뿍 #1인피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          14,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 불고기피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #육즙가득 #불고기듬뿍 #1인피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          14,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">소고기</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 페페로니피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #페페로니 #한판가득 #1인피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          14,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 하와이안피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #파인애플 #새콤달콤 #1인피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          14,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">과일</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 야채피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #신선야채 #영양만점 #1인피자
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          14,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                        퍼스널 치즈피자
-                                                                                    </h5> <h6 data-v-6bd3290f="" class="item-description">
-                                                                                        #1인피자 #치즈듬뿍 #정통치즈
-                                                                                    </h6> <h5 data-v-6bd3290f="" class="item-price">
-                                                                                      <span data-v-6bd3290f="">
-                                                                                      <span data-v-6bd3290f="" class="large">P</span>
-                                                                                          14,000
-                                                                                      </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
-                                                                                          맛있고 건강한 피자! 피자알볼로의
-                                                                                          <font color="#41b6e6">
-                                                                                              다양한 피자를 주문
-                                                                                          </font>
-                                                                                          해 보세요.
-                                                                                        </p></div> <div class="pc-pizzamenu-depth-tab-area"><div data-v-69144bb9="" class="layout-tab-whole pc-pizzamenu-depth-tab"><table data-v-69144bb9="" class="tab-container-web"><tr data-v-69144bb9="" class="column"><td data-v-69144bb9="" class="tab-title active" style="border: 1px solid rgb(204, 204, 204);">
-                                                                                      전체
-                                                                                  </td>
-                                                                                  <td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
-                                                                                      장인피자
-                                                                                  </td>
-                                                                                  <td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
-                                                                                      달인피자
-                                                                                  </td>
-                                                                                  <td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
-                                                                                      명품피자
-                                                                                  </td>
-                                                                                  <td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
-                                                                                      웰빙피자
-                                                                                  </td>
-                                                                                  <td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
-                                                                                      정통피자
-                                                                                  </td>
-                                                                                  <td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
-                                                                                      퍼스널피자
-                                                                                  </td></tr></table> <table data-v-69144bb9="" class="tab-container-mobile"><tr data-v-69144bb9="" class="column">
-                                                                                      <td data-v-69144bb9="" colspan="3" class="tab-title active" style="border: 1px solid rgb(204, 204, 204);">
-                                                                                      전체
-                                                                                  </td></tr> <tr data-v-69144bb9="" class="column">
-                                                                                      <td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
-                                                                                      장인피자
-                                                                                  </td> 
-                                                                                  <td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
-                                                                                      달인피자
-                                                                                  </td> 
-                                                                                  <td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
-                                                                                      명품피자
-                                                                                  </td></tr><tr data-v-69144bb9="" class="column">
-                                                                                      <td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
-                                                                                      웰빙피자
-                                                                                  </td> 
-                                                                                  <td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
-                                                                                      정통피자
-                                                                                  </td> 
-                                                                                  <td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
-                                                                                      퍼스널피자
-                                                                                  </td></tr></table></div></div> <div class="pc-pizzamenu-menu"><div class="pizzamenu-text-area"><div class="pizzamenu-allergie-circle-area"><div class="pizzamenu-allergie-circle">i</div> <font color="#f9423a">재료성분</font></div> <div class="pizzamenu-rank"><select id="selectActive" class="alvolo-select-noline" style="height: 68px;"><option value="3">인기순</option><option value="2">신제품순</option><option value="1">가격낮은순</option><option value="0">가격높은순</option></select></div></div> <div class="pc-pizzamenu-card-area"><div class="pizzamenu-area-item"><div data-v-6c32b9f6="" class="carditem-web-container"><div data-v-6c32b9f6="" class="pizza-state-container-dual"><img data-v-6c32b9f6="" src="">L</span>
-                                                                            37,000
-                                                                          </span></span> 
-                                                                          <span data-v-6c32b9f6="">
-                                                                              <span data-v-6c32b9f6="" class="regular">R</span>
-                                                                          32,500
-                                                                        </span></h5> <div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">소고기</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">치즈</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><!----></div></div></div> <div data-v-348e20c4="" class="click-active shadow-box"><div data-v-348e20c4="" class="view-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 상세보기
-                                                                          </div></div> <div data-v-348e20c4="" class="basket-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 장바구니
-                                                                          </div></div> <!----></div></div><div class="pizzamenu-area-item"><div data-v-6c32b9f6="" class="carditem-web-container"><div data-v-6c32b9f6="" class="pizza-state-container-dual"><img data-v-6c32b9f6="" src="">L</span>
-                                                                            37,000
-                                                                          </span></span> 
-                                                                          <span data-v-6c32b9f6="">
-                                                                              <span data-v-6c32b9f6="" class="regular">R</span>
-                                                                          32,500
-                                                                        </span></h5> <div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">소고기</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">치즈</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><!----></div></div></div> <div data-v-348e20c4="" class="click-active shadow-box"><div data-v-348e20c4="" class="view-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 상세보기
-                                                                          </div></div> <div data-v-348e20c4="" class="basket-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 장바구니
-                                                                          </div></div> <!----></div></div><div class="pizzamenu-area-item"><div data-v-6c32b9f6="" class="carditem-web-container"><div data-v-6c32b9f6="" class="pizza-state-container-dual"><img data-v-6c32b9f6="" src="">L</span>
-                                                                            37,000
-                                                                          </span></span> 
-                                                                          <span data-v-6c32b9f6="">
-                                                                              <span data-v-6c32b9f6="" class="regular">R</span>
-                                                                          32,500
-                                                                        </span></h5> <div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">닭고기</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">감자</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">치즈</div></div></div></div> <div data-v-348e20c4="" class="click-active shadow-box"><div data-v-348e20c4="" class="view-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 상세보기
-                                                                          </div></div> <div data-v-348e20c4="" class="basket-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 장바구니
-                                                                          </div></div> <!----></div></div><div class="pizzamenu-area-item"><div data-v-6c32b9f6="" class="carditem-web-container"><div data-v-6c32b9f6="" class="pizza-state-container-dual"><img data-v-6c32b9f6="" src="">L</span>
-                                                                            37,000
-                                                                          </span></span> 
-                                                                          <span data-v-6c32b9f6="">
-                                                                              <span data-v-6c32b9f6="" class="regular">R</span>
-                                                                          32,500
-                                                                        </span></h5> <div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">닭고기</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">감자</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">치즈</div></div></div></div> <div data-v-348e20c4="" class="click-active shadow-box"><div data-v-348e20c4="" class="view-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 상세보기
-                                                                          </div></div> <div data-v-348e20c4="" class="basket-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 장바구니
-                                                                          </div></div> <!----></div></div><div class="pizzamenu-area-item"><div data-v-6c32b9f6="" class="carditem-web-container"><div data-v-6c32b9f6="" class="pizza-state-container"><img data-v-6c32b9f6="" src="">L</span>
-                                                                            34,500
-                                                                          </span></span> 
-                                                                          <span data-v-6c32b9f6="">
-                                                                              <span data-v-6c32b9f6="" class="regular">R</span>
-                                                                          29,000
-                                                                        </span></h5> <div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">새우</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">닭고기</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><!----></div></div></div> <div data-v-348e20c4="" class="click-active shadow-box"><div data-v-348e20c4="" class="view-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 상세보기
-                                                                          </div></div> <div data-v-348e20c4="" class="basket-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 장바구니
-                                                                          </div></div> <!----></div></div><div class="pizzamenu-area-item"><div data-v-6c32b9f6="" class="carditem-web-container"><div data-v-6c32b9f6="" class="pizza-state-container"><img data-v-6c32b9f6="" src="">L</span>
-                                                                            31,500
-                                                                          </span></span> 
-                                                                          <span data-v-6c32b9f6="">
-                                                                              <span data-v-6c32b9f6="" class="regular">R</span>
-                                                                          27,000
-                                                                        </span></h5> <div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">닭고기</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">단호박</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">새우</div></div></div></div> <div data-v-348e20c4="" class="click-active shadow-box"><div data-v-348e20c4="" class="view-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 상세보기
-                                                                          </div></div> <div data-v-348e20c4="" class="basket-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 장바구니
-                                                                          </div></div> <!----></div></div></div> <div class="pizzamenu-pagination"><div class="layout-pagination-whole"><div class="layout-pagination el-pagination"><button type="button" disabled="disabled" class="btn-prev"><i class="el-icon el-icon-arrow-left"></i></button><ul class="el-pager"><li class="number active">1</li><!----><li class="number">2</li><li class="number">3</li><li class="number">4</li><li class="number">5</li><li class="number">6</li><li class="number">7</li><!----><li class="number">8</li></ul><button type="button" class="btn-next"><i class="el-icon el-icon-arrow-right"></i></button></div></div></div></div></div></div> <!----> <!----></div> <!----></div></div></div></div></div> <!----><!----></div> <div class="client-main-button-area"><img src="/static/img/icon_btn_up.c7fe4d5.png" alt="위로이동" class="client-main-go-top"></div> <div data-v-893e64ae="" class="order-web-footer"><!----> <div data-v-893e64ae="" class="web-footer-top-layout"><div data-v-893e64ae="" class="web-footer-top"><div data-v-893e64ae="" class="div-term">개인정보처리방침</div> <div data-v-893e64ae="" class="div-term">제공서비스약관</div> <div data-v-893e64ae="" class="div-term">이메일무단수집거부</div> <div data-v-893e64ae="" class="div-term">고객센터</div> <div data-v-893e64ae="" class="div-term">회사소개</div> <div data-v-893e64ae="" class="div-term right-item phone_number"><img data-v-893e64ae="" src="">
-                                                                                          주문전화 1688-8495 <br data-v-893e64ae="">온라인주문 문의/취소 070-4787-1991 
-                                                                                      </div> <div data-v-893e64ae="" class="right-item cursor-pointer"><img data-v-893e64ae="" src="">
-                                                                                        가맹문의
-                                                                                      </div> <div data-v-893e64ae="" class="right-item cursor-pointer"><img data-v-893e64ae="" src="">
-                                                                                          가맹점공간
-                                                                                      </div></div></div> <div data-v-893e64ae="" class="web-footer-middle-layout"><div data-v-893e64ae="" class="footer-left-layout"><p data-v-893e64ae="" class="company-info">법인명 : ㈜ALVOLO F&amp;C   대표자 : 이재욱   사업자번호 : 117-81-73358   통신판매번호 : 제2015-서울양천-0524호
-서울시 양천구 목동로&nbsp;232 전화 : 02-2645-8495   팩스 : 02-2604-5171</p>
-</div> <div data-v-893e64ae="" class="footer-right-layout"><img data-v-893e64ae="" src="">확인</button></span></div></div></article>
-<article id="popAppNotice" class="popAppNotice pop_wrap"><div class="pop_cont"><h2>피자알볼로 앱 이용을 위한 권한 안내</h2><p><strong>필수 접근 권한</strong> <span>기기 및 앱 기록앱 상태(버전) 확인</span> <span>기기 ID : 기기 식별 및 광고 트래킹</span> <span>Wi-Fi 연결정보 : 앱 이용 네트워크 연결 체크</span> <strong>선택 접근 권한</strong> <span>전화 : 전화 걸기 및 관리</span> <span>SMS : 인증 번호 확인 및 입력</span> <span>사진/미디어/파일 : 이미지 캐시, 글 작성 파일 읽기 또는 저장</span> <span>위치정보 : 내 근처 매장찾기</span> <em>선택적 접근 권한은 미동의 시에도 해당 기능의 앱 서비스는 이용 가능 합니다.</em> <strong>접근 권한 변경 방법</strong> <span>휴대폰 "설정 &gt; 개인정보보호 &gt; 앱 권한"에서 설정 변경 하실 수 있습니다.</span></p><div class="btn_wrap btn_1"><span><button onclick="appRootCall2()">확인</button></span></div></div></article><script src="/static/js/manifest.js"></script><script src="/static/js/vendor.js"></script><script src="/static/js/app.js">
+                    </div>
+                    <div class="collapse-tab-item">
+                        <div class="tab-item">
+                            멤버십˙제휴할인
+                        </div> 
+                        <div class="tab-item">
+                          멤버십 혜택
+                        </div>
+                        <div class="tab-item">
+                          통신사 제휴 할인
+                        </div>
+                    </div>
+                    <div class="collapse-tab-item">
+                        <div class="tab-item">
+                            이벤트
+                        </div> 
+                    </div>
+                    <div class="collapse-tab-item">
+                        <div class="tab-item">
+                            매장찾기
+                        </div> 
+                    <div class="tab-item">
+                          지역명 찾기
+                  </div><div class="tab-item">
+                          매장명 찾기
+                  </div><div class="tab-item">
+                          현위치 찾기
+                  </div></div><div class="collapse-tab-item"><div class="tab-item">
+                    마이페이지
+                  </div> <div class="tab-item">
+                          주문내역
+                  </div><div class="tab-item">
+                          쿠폰함
+                  </div><div class="tab-item">
+                          MY CLASS
+                  </div><div class="tab-item">
+                          비행기스탬프
+                  </div><div class="tab-item">
+                          정보수정
+                  </div><div class="tab-item">
+                          회원탈퇴
+                  </div></div><div class="collapse-tab-item"><div class="tab-item">
+                    주문하기
+                  </div> <div class="tab-item">
+                          배달주문하기
+                  </div><div class="tab-item">
+                          포장주문하기
+                  </div><div class="tab-item">
+                          간편주문
+                  </div><div class="tab-item">
+                          E쿠폰
+                  </div><div class="tab-item">
+                          선물하기
+                  </div></div></div> <div class="web-collapse-tab-middle"><span class="tab-middle-item">
+                회사소개
+                <img src="">
+                가맹문의
+                <img src="">
+                고객센터
+                <img src="">
+                단체주문
+                <img src="">
+                    로그인해 주세요
+                </div></div> <div data-v-972a2f4c="" class="layout-body-content"><div data-v-972a2f4c="" class="body-left"><span data-v-972a2f4c="" class="drawer-btn-join">
+                        회원가입
+                    </span></div> <div data-v-972a2f4c="" class="body-right"><span data-v-972a2f4c="" class="btn-search-order" style="width: 113.05px;">
+                        주문조회
+                    </span></div></div></div></div> <div data-v-42d86f9b="" class="layout-drawer-menu"><div data-v-147cdbb4="" data-v-42d86f9b="" class="side-collapse-container"><div data-v-147cdbb4="" class="side-collapse-switch"><div data-v-147cdbb4="" class="side-collapse-title">
+                피자
+            </div> <div data-v-147cdbb4=""><img data-v-147cdbb4="" src="">
+                사이드메뉴
+            </div> <div data-v-147cdbb4=""><img data-v-147cdbb4="" src="">
+                멤버십˙제휴할인
+            </div> <div data-v-147cdbb4=""><img data-v-147cdbb4="" src="">
+                이벤트
+            </div> <div data-v-147cdbb4=""><img data-v-147cdbb4="" src="">
+              쉬림프&amp;핫치킨골드피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #알볼로직원선호도1위 #매콤함
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              34,500
+              <span data-v-6bd3290f="" class="regular">R</span>
+              29,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">새우</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              어깨피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #9가지맛 #인기메뉴 #한판에
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              31,500
+              <span data-v-6bd3290f="" class="regular">R</span>
+              27,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">단호박</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">새우</div></div></div></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              꿈을피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #델루나피자 #불고기&amp;바질 #고구마
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              31,500
+              <span data-v-6bd3290f="" class="regular">R</span>
+              27,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">과일</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">고구마</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">소고기</div></div></div></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              단호박피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #담백달콤 #부드러움 #영양만점
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              27,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              22,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">단호박</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              콤비네이션피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #남녀노소 #누구나좋아하는맛
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              24,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              20,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              팔도피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+               #전주불백피자 #목동피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f="" class="large">L</span>
+            31,500
+          </h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">새우</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              웃음꽃피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #스마일 #다양한토핑#살짝매콤
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              29,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              24,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              옥수수피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #통옥수수 #고구마 #파인애플
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              27,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              22,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">통옥수수</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">고구마</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              목동피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #기본에충실하다 #임실치즈듬뿍
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              27,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              22,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              쏘핫피자 1단계
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #매운맛 #1단계 #수미감자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              31,500
+              <span data-v-6bd3290f="" class="regular">R</span>
+              27,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">감자</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              날개피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #수제마늘빵 #부르스케타
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              34,500
+              <span data-v-6bd3290f="" class="regular">R</span>
+              29,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">수제마늘빵</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">새우</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">통옥수수</div></div></div></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              쏘핫피자 2단계
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #매운맛 #2단계 #수미감자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              31,500
+              <span data-v-6bd3290f="" class="regular">R</span>
+              27,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">감자</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              쏘핫피자 3단계
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #매운맛 #3단계 #수미감자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              31,500
+              <span data-v-6bd3290f="" class="regular">R</span>
+              27,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">감자</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              전주불백피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #불맛가득 #간장불백 #고추장불백
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              29,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              24,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              대새피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #대새레드소스#72시간숙성#랍스터새우
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              31,500
+              <span data-v-6bd3290f="" class="regular">R</span>
+              27,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">새우</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              고구마피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #담백함 #부드러움 #영양만점
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              27,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              22,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">고구마</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              팔자피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #여덟가지토핑 #R는여섯가지 #골라먹는맛
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              29,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              24,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">새우</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">통옥수수</div></div></div></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              핫&amp;스파이시치킨피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #매콤함새콤의_조화
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              27,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              22,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              고르곤졸라
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #블루치즈 #깊은향 #꿀과함께
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              27,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              22,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              포테이토피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #큼직한감자 #담백함 #고소함
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              24,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              20,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">감자</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              베이컨체다치즈피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+               #베이컨 #한판가득 #꽉채운맛
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              24,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              20,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              불고기피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #육즙가득 #직접볶은 #불고기듬뿍
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              24,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              20,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">소고기</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              야채피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #신선야채 #영양만점 
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              23,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              19,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              하와이안피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #파인애플 #새콤달콤
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              23,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              19,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">과일</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              페페로니피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #페페로니#한판가득 #풍부한맛
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              23,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              19,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              치즈피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #정통치즈 #치즈듬뿍
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">L</span>
+              23,000
+              <span data-v-6bd3290f="" class="regular">R</span>
+              19,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 쉬림프&amp;핫치킨
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #넘사벽1위 #매콤함 #1인피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                20,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">새우</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 대새피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #72시간숙성 #랍스터새우 #1인피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                19,500
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">새우</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 웃음꽃피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #맛없맛 #살짝매콤 #1인피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                17,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 고구마피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #부드러운 #어른입맛 #1인피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                15,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">고구마</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 단호박피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #달콤단백 #시그니처 #1인피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                15,000
+            </span></h5> <!----><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 핫&amp;스파이시치킨
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #매콤새콤 #치킨할라피뇨 #1인피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                15,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">닭고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 고르곤졸라
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #블루치즈 #깊은향 #1인피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                15,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 목동피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #기본에충실한 #임실치즈 #1인피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                15,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 옥수수피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #통옥수수 #고구마 #파인애플 #1인피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                15,000
+            </span></h5> <!----><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 포테이토피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #담백한 #고소한 #1인피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                14,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">감자</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 콤비네이션피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #남녀노소 #누구나좋아하는 #1인피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                14,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 베이컨체다치즈
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #베이컨 #치즈듬뿍 #1인피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                14,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 불고기피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #육즙가득 #불고기듬뿍 #1인피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                14,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">소고기</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 페페로니피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #페페로니 #한판가득 #1인피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                14,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">돼지고기</div></div></div><div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 하와이안피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #파인애플 #새콤달콤 #1인피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                14,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">과일</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 야채피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #신선야채 #영양만점 #1인피자
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                14,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+              퍼스널 치즈피자
+          </h5> <h6 data-v-6bd3290f="" class="item-description">
+              #1인피자 #치즈듬뿍 #정통치즈
+          </h6> <h5 data-v-6bd3290f="" class="item-price"><span data-v-6bd3290f=""><span data-v-6bd3290f="" class="large">P</span>
+                14,000
+            </span></h5> <div data-v-6bd3290f="" class="topping-box"><div data-v-6bd3290f="" class="topping-box-container"><div class="box">치즈</div></div></div><!----><!----></div></div></div> <div class="pizza-card-item-button" style="position: absolute; top: 0px; right: 0px; width: 60px; height: 120px;"><div class="detail"><img src="">
+                맛있고 건강한 피자! 피자알볼로의
+                <font color="#41b6e6">다양한 피자를 주문</font>해 보세요.
+              </p></div> <div class="pc-pizzamenu-depth-tab-area"><div data-v-69144bb9="" class="layout-tab-whole pc-pizzamenu-depth-tab"><table data-v-69144bb9="" class="tab-container-web"><tr data-v-69144bb9="" class="column"><td data-v-69144bb9="" class="tab-title active" style="border: 1px solid rgb(204, 204, 204);">
+                        전체
+                    </td><td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
+                        장인피자
+                    </td><td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
+                        달인피자
+                    </td><td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
+                        명품피자
+                    </td><td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
+                        웰빙피자
+                    </td><td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
+                        정통피자
+                    </td><td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
+                        퍼스널피자
+                    </td></tr></table> <table data-v-69144bb9="" class="tab-container-mobile"><tr data-v-69144bb9="" class="column"><td data-v-69144bb9="" colspan="3" class="tab-title active" style="border: 1px solid rgb(204, 204, 204);">
+                        전체
+                    </td></tr> <tr data-v-69144bb9="" class="column"><td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
+                        장인피자
+                    </td> <td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
+                        달인피자
+                    </td> <td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
+                        명품피자
+                    </td></tr><tr data-v-69144bb9="" class="column"><td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
+                        웰빙피자
+                    </td> <td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
+                        정통피자
+                    </td> <td data-v-69144bb9="" class="tab-title default" style="border: 1px solid rgb(204, 204, 204);">
+                        퍼스널피자
+                    </td></tr></table></div></div> <div class="pc-pizzamenu-menu"><div class="pizzamenu-text-area"><div class="pizzamenu-allergie-circle-area"><div class="pizzamenu-allergie-circle">i</div> <font color="#f9423a">재료성분</font></div> <div class="pizzamenu-rank"><select id="selectActive" class="alvolo-select-noline" style="height: 68px;"><option value="3">인기순</option><option value="2">신제품순</option><option value="1">가격낮은순</option><option value="0">가격높은순</option></select></div></div> <div class="pc-pizzamenu-card-area"><div class="pizzamenu-area-item"><div data-v-6c32b9f6="" class="carditem-web-container"><div data-v-6c32b9f6="" class="pizza-state-container"><img data-v-6c32b9f6="" src="">L</span>
+              34,500
+            </span></span> <span data-v-6c32b9f6=""><span data-v-6c32b9f6="" class="regular">R</span>
+            29,000
+          </span></h5> <div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">새우</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">닭고기</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><!----></div></div></div> <div data-v-348e20c4="" class="click-active shadow-box"><div data-v-348e20c4="" class="view-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 상세보기
+            </div></div> <div data-v-348e20c4="" class="basket-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 장바구니
+            </div></div> <!----></div></div><div class="pizzamenu-area-item"><div data-v-6c32b9f6="" class="carditem-web-container"><div data-v-6c32b9f6="" class="pizza-state-container"><img data-v-6c32b9f6="" src="">L</span>
+              31,500
+            </span></span> <span data-v-6c32b9f6=""><span data-v-6c32b9f6="" class="regular">R</span>
+            27,000
+          </span></h5> <div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">닭고기</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">단호박</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">새우</div></div></div></div> <div data-v-348e20c4="" class="click-active shadow-box"><div data-v-348e20c4="" class="view-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 상세보기
+            </div></div> <div data-v-348e20c4="" class="basket-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 장바구니
+            </div></div> <!----></div></div><div class="pizzamenu-area-item"><div data-v-6c32b9f6="" class="carditem-web-container"><div data-v-6c32b9f6="" class="pizza-state-container"><img data-v-6c32b9f6="" src="">L</span>
+              31,500
+            </span></span> <span data-v-6c32b9f6=""><span data-v-6c32b9f6="" class="regular">R</span>
+            27,000
+          </span></h5> <div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">과일</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">고구마</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">소고기</div></div></div></div> <div data-v-348e20c4="" class="click-active shadow-box"><div data-v-348e20c4="" class="view-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 상세보기
+            </div></div> <div data-v-348e20c4="" class="basket-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 장바구니
+            </div></div> <!----></div></div><div class="pizzamenu-area-item"><div data-v-6c32b9f6="" class="carditem-web-container"><div data-v-6c32b9f6="" class="pizza-state-container"><img data-v-6c32b9f6="" src="">L</span>
+              27,000
+            </span></span> <span data-v-6c32b9f6=""><span data-v-6c32b9f6="" class="regular">R</span>
+            22,500
+          </span></h5> <div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">단호박</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">돼지고기</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><!----></div></div></div> <div data-v-348e20c4="" class="click-active shadow-box"><div data-v-348e20c4="" class="view-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 상세보기
+            </div></div> <div data-v-348e20c4="" class="basket-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 장바구니
+            </div></div> <!----></div></div><div class="pizzamenu-area-item"><div data-v-6c32b9f6="" class="carditem-web-container"><div data-v-6c32b9f6="" class="pizza-state-container"><img data-v-6c32b9f6="" src="">L</span>
+              24,000
+            </span></span> <span data-v-6c32b9f6=""><span data-v-6c32b9f6="" class="regular">R</span>
+            20,500
+          </span></h5> <div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">돼지고기</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><!----></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><!----></div></div></div> <div data-v-348e20c4="" class="click-active shadow-box"><div data-v-348e20c4="" class="view-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 상세보기
+            </div></div> <div data-v-348e20c4="" class="basket-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 장바구니
+            </div></div> <!----></div></div><div class="pizzamenu-area-item"><div data-v-6c32b9f6="" class="carditem-web-container"><div data-v-6c32b9f6="" class="pizza-state-container"><img data-v-6c32b9f6="" src="">L</span>
+              31,500
+            </span></span> <!----></h5> <div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">새우</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">돼지고기</div></div><div data-v-6c32b9f6="" class="topping-box-container topping-box"><div class="box">치즈</div></div></div></div> <div data-v-348e20c4="" class="click-active shadow-box"><div data-v-348e20c4="" class="view-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 상세보기
+            </div></div> <div data-v-348e20c4="" class="basket-button"><div data-v-348e20c4="" class="inner-container"><img data-v-348e20c4="" src=""> 장바구니
+            </div></div> <!----></div></div></div> <div class="pizzamenu-pagination"><div class="layout-pagination-whole"><div class="layout-pagination el-pagination"><button type="button" disabled="disabled" class="btn-prev"><i class="el-icon el-icon-arrow-left"></i></button><ul class="el-pager"><li class="number active">1</li><!----><li class="number">2</li><li class="number">3</li><li class="number">4</li><li class="number">5</li><li class="number">6</li><li class="number">7</li><!----><li class="number">8</li></ul><button type="button" class="btn-next"><i class="el-icon el-icon-arrow-right"></i></button></div></div></div></div></div></div> <!----> <!----></div> <!----></div></div></div></div></div> <!----><!----></div> <div class="client-main-button-area"><img src="">
+                            주문전화 1688-8495 <br data-v-893e64ae="">온라인주문 문의/취소 070-4787-1991 
+                        </div> <div data-v-893e64ae="" class="right-item cursor-pointer"><img data-v-893e64ae="" src="">
+                          가맹문의
+                        </div> <div data-v-893e64ae="" class="right-item cursor-pointer"><img data-v-893e64ae="" src="">
+                            가맹점공간
+                        </div></div></div> <div data-v-893e64ae="" class="web-footer-middle-layout"><div data-v-893e64ae="" class="footer-left-layout"><p data-v-893e64ae="" class="company-info">법인명 : ㈜ALVOLO F&amp;C   대표자 : 이재욱   사업자번호 : 117-81-73358   통신판매번호 : 제2015-서울양천-0524호
+    서울시 양천구 목동로&nbsp;232 전화 : 02-2645-8495   팩스 : 02-2604-5171</p></div> <div data-v-893e64ae="" class="footer-right-layout"><img data-v-893e64ae="" src=""></a></div></div></div></div> <!----></div>
 
-    </script>
 </body>
 </html>
+
+///////////////////////////////////////////////@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

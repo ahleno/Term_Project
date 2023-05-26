@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/review.css">
 </head>
 <body>
     <div id="app" style="overflow: auto;">
@@ -47,8 +48,8 @@
             <div class="menu-detail main-page">
                 <!---->
                 <div class="main-top">
-                    <p class="main-top-text"> 피자</p>
-                    <p class="main-top-footer">
+                    <p class="main-top-text" style="font-size: 42px;"> 피자</p>
+                    <p class="main-top-footer" style="font-size: 18px;">
                         맛있고 건강한 피자! 피자알볼로의
                         <span style="color: #41b6e6;">다양한 피자를 주문</span>
                         해 보세요.
@@ -56,30 +57,32 @@
                 </div>
                 <div class="main-info">
                     <img>
-                    <div class="main-info-detail"></div>
+                    <div class="main-info-detail">
+
+                    </div>
                 </div>
                 <div class="main-review">
                     <table class="review-table">
-                        <tr id="review-star">
-                            <tb></tb>
-                            <tb></tb>
-                            <tb></tb>
+                        <th> 별점 </th>
+                        <th> 리뷰 </th>
+                        <th> 작성자 </th>
+                        <tr>
+                            <tb id="review-star"></tb>
+                            <tb id="review-body"></tb>
+                            <tb id="review-writer"></tb>
                         </tr>
-                        <tr id="review-body">
-                            <tb></tb>
-                            <tb></tb>
-                            <tb></tb>
+                        <tr>
+                            <tb id="review-star"></tb>
+                            <tb id="review-body"></tb>
+                            <tb id="review-writer"></tb>
                         </tr>
-                        <tr id="review-writer">
-                            <tb></tb>
-                            <tb></tb>
-                            <tb></tb>
+                        <tr>
+                            <tb id="review-star"></tb>
+                            <tb id="review-body"></tb>
+                            <tb id="review-writer"></tb>
                         </tr>
                     </table>                    
                 </div>
-            </div>
-            <div class="client-main-button-area">
-                <img src="./img/img_btn_up_icon.png" alt="위로이동" class="client-main-go-top">
             </div>
             <div class="footer">
                 <!---->

@@ -71,3 +71,7 @@ main
     padding: 40px;
     position: relative;
 }
+
+table {
+    justify-content: space-between;
+}

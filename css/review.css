@@ -41,11 +41,14 @@ header
 /******* 
 main
 *******/
-.main-page{
+.main-page{ }
+
+.menu-detail {
+    min-height: 640px;
     width: 1200px;
-    background-color: #f4f4f4;
-    padding-top: 30px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 
 .main-top {
@@ -148,8 +151,16 @@ slidebox / carousel
     margin-right: 10px;
 }
 
+.review-table {
+    margin-top: 20px;    
+}
 
+th {
+    font-size: 22px;
+    width: 400px; 
+}
 
-table {
-    justify-content: space-between;
+tr {
+    border: 1px 0 10 0 0 #999;
+    min-height: 300px;
 }

@@ -103,7 +103,7 @@
             <div class="main-page">
                 <!---->
                 <div class="main-top">
-                    <p class="main-top-text" style="font-size: 42px;"> 피자</p>
+                    <p class="main-top-text"> 피자</p>
                     <p class="main-top-footer" style="font-size: 18px;">
                         맛있고 건강한 피자! 피자알볼로의
                         <span style="color: #41b6e6;">다양한 피자를 주문</span>
@@ -122,20 +122,180 @@
                 </div>
                 <div class="main-menu">
                     <div class="menu-text-area">
-                        <div style="color: rgb(249, 66, 58);">
-                            <a>i</a>
+                        <div class="menu-allergie-circle-area" style="color: rgb(249, 66, 58);">
+                            <a class="menu-allergie-circle">i</a>
                             <a> 재료성분 </a>
                         </div>
                         <div class="menu-rank">
-                            <select id="selectActive" class="rank-select"></select>
+                            <select id="selectActive" class="rank-select">
+                                <option value="popularity">인기순</option>
+                                <option value="new">신제품순</option>
+                                <option value="low-price">가격낮은순</option>
+                                <option value="high-price">가격높은순</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="menu-card-area"></div>
-                    <div class="menu-pagination"></div>
+                    <div class="menu-card-area">
+                        <div class="menu-item">
+                            <div class="card-item-container">
+                                <div class="menu-state-container">
+                                    <img class="menu-state">
+                                </div>
+                                <div class="image-container">
+                                    <img src="./img/pizza_card_img.png" class="image" alt="pizza image">
+                                </div>
+                                <div class="item-container">
+                                    <h5 class="item-name">
+                                        쉬림프&핫치킨골드피자
+                                    </h5>
+                                    <h6 class="item-description">
+                                        #알볼로직원선호도1위 #매콤함
+                                    </h6>
+                                    <h5 class="item-price">
+                                        <span>
+                                            <span class="large">L</span> 34,500
+                                        </span>
+                                        <span>
+                                            <span class="regular">R</span> 29,000
+                                        </span>
+                                    </h5>
+                                    <div class="topping-box-container topping-box">
+                                        <div class="box">새우</div>
+                                    </div>
+                                    <div class="topping-box-container topping-box">
+                                        <div class="box">닭고기</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="click-active shadow-box">
+                                <div class="review-button">
+                                    <div class="inner-container">
+                                        <img src="img/img_review_icon.png" class="review-card"> 리뷰보기
+                                    </div>
+                                </div>
+                                <div class="basket-button">
+                                    <div class="inner-container">
+                                        <img src="img/img_basket_icon.png" class="basket-card"> 장바구니
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="menu-item">
+                            <div class="card-item-container">
+                                <div class="menu-state-container">
+                                    <img class="menu-state">
+                                </div>
+                                <div class="image-container">
+                                    <img src="./img/pizza_card_img.png" class="image" alt="pizza image">
+                                </div>
+                                <div class="item-container">
+                                    <h5 class="item-name">
+                                        피자
+                                    </h5>
+                                    <h6 class="item-description">
+                                        # #
+                                    </h6>
+                                    <h5 class="item-price">
+                                        <span>
+                                            <span class="large">L</span> 34,500
+                                        </span>
+                                        <span>
+                                            <span class="regular">R</span> 29,000
+                                        </span>
+                                    </h5>
+                                    <div class="topping-box-container topping-box">
+                                        <div class="box">새우</div>
+                                    </div>
+                                    <div class="topping-box-container topping-box">
+                                        <div class="box">닭고기</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="click-active shadow-box">
+                                <div class="review-button">
+                                    <div class="inner-container">
+                                        <img>
+                                    </div>
+                                </div>
+                                <div class="basket-button">
+                                    <div class="inner-container">
+                                        <img>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="menu-item">
+                            <div class="card-item-container">
+                                <div class="menu-state-container">
+                                    <img class="menu-state">
+                                </div>
+                                <div class="image-container">
+                                    <img src="./img/pizza_card_img.png" class="image" alt="pizza image">
+                                </div>
+                                <div class="item-container">
+                                    <h5 class="item-name">
+                                        피자
+                                    </h5>
+                                    <h6 class="item-description">
+                                        # #
+                                    </h6>
+                                    <h5 class="item-price">
+                                        <span>
+                                            <span class="large">L</span> 34,500
+                                        </span>
+                                        <span>
+                                            <span class="regular">R</span> 29,000
+                                        </span>
+                                    </h5>
+                                    <div class="topping-box-container topping-box">
+                                        <div class="box">새우</div>
+                                    </div>
+                                    <div class="topping-box-container topping-box">
+                                        <div class="box">닭고기</div>
+                                    </div>
+                                    <div class="topping-box-container topping-box">
+                                        <div class="box">단호박</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="click-active shadow-box">
+                                <div class="review-button">
+                                    <div class="inner-container">
+                                        <img>
+                                    </div>
+                                </div>
+                                <div class="basket-button">
+                                    <div class="inner-container">
+                                        <img>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-pagination">
+                        <div class="layout-pagination">
+                            <div class="layout-pagination el-pagination">
+                                <button type="button" disabled="disabled" class="btn-prev">
+                                    <i class="el-icon el-icon-arrow-left"> 
+                                        < 
+                                    </i>
+                                </button>
+                                <ul class="el-pager">
+                                    <li class="number active">1</li>
+                                    <!---->
+                                    <li class="number">2</li>
+                                </ul>
+                                <button type="button" class="btn-next">
+                                    <i class="el-icon el-icon-arrow-right">
+                                        >
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="footer">
-                <!---->
             </div>
         </div>
     </div>
